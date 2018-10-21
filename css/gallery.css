@@ -1,0 +1,47 @@
+.gallery__img {
+    height: 400px;
+    width: 400px;
+    background: grey 50%/cover;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container_gallery {
+    text-align: center;
+}
+
+.img-road-bicycle-1 {
+    background-image: url('../img/road-bicycle-1.jpg')
+}
+
+.img-road-bicycle-2 {
+    background-image: url('../img/road-bicycle-2.jpg')
+}
+
+.img-road-bicycle-3 {
+    background-image: url('../img/road-bicycle-3.jpg')
+}
+
+.img-highway-bicycle-1 {
+    background-image: url('../img/highway-bicycle-1.jpg')
+}
+
+.img-highway-bicycle-2 {
+    background-image: url('../img/highway-bicycle-2.jpg')
+}
+
+.img-highway-bicycle-3 {
+    background-image: url('../img/highway-bicycle-3.jpg')
+}
+
+.img-mountain-bicycle-1 {
+    background-image: url('../img/mountain-bicycle-1.jpg')
+}
+
+.img-mountain-bicycle-2 {
+    background-image: url('../img/mountain-bicycle-2.jpg')
+}
+
+.img-mountain-bicycle-3 {
+    background-image: url('../img/mountain-bicycle-3.jpeg')
+}

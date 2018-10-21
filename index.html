@@ -1,179 +1,293 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-    .my-box2 {
-        width:100px;
-        height: 100px;
-        background: blue;
-        position: relative;
-        margin: 30px;
-        transition: all 2s 1s ease-in-out;
-    }
-    .my-box2:hover {
-        background: #000;
-        /*transform: rotate(90deg);*/
-        transform: translate(100px,200px) rotate(900000deg);
-    }
-    .my-box2::after {
-       content:attr(val);
-       position: absolute;
-       top: 100%;
-       display: block;
-    }
-    .my-box2:hover::after {
-       content:attr(val);
-       position: absolute;
-       left: 30px;
-       top: 100%;
-       display: block;
-       color: red;
-    }
-
-
-    div a {
-        background: #000;
-    }
-    button:active {
-        background: green;
-    }
-    input:checked {
-        /*
-        display:inline-block;
-        width:100px;
-        height: 100px;
-        */
-    }
-    .hided {
-        display:none;
-    }
-    .my-input {
-        display:inline-block;
-        width:30px;
-        height: 30px;
-        background: green;
-    }
-    .hided:checked ~ .my-input {
-        background: orange;
-    }
-    .my-box {
-        width:100px;
-        height: 100px;
-        background: red;
-    }
-    .my-box:hover {
-        background: blue;
-    }
-    .my-inp {
-        /*position: absolute;*/
-        transition: 5s;
-        left: 0px;
-    }
-    .my-inp:focus {
-        background: purple;
-        box-shadow: 0 0 20px 0 rgba(0,0,0,0.8);
-        left: 400px;
-    }
-    h2:target {
-        color: red;
-    }
-    header {
-        height: 100px;
-        position: fixed;
-        width: 100%;
-        background: #000;
-        left: 0;
-        top: 0;
-        z-index: 1000;
-    }
-    .content {
-        padding-top: 100px;
-    }
-    .my-box3 {
-        width:100px;
-        height: 100px;
-        background: blue;
-        margin: 20px;
-        position: relative;
-    }
-    .my-box3:target {
-        background: green;
-       /* padding-top: 100px; */
-    }
-    .hr {
-        top: -100px;
-        position: absolute;
-    }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <script src="./js/script.js"></script>
+    <title>Аварийное устранение засоров канализации любой сложности в Москве и Московской области</title>
 </head>
-<body>
+
+<body id="top">
     <header>
-        safaf
-    </header>
-    <div class="content">
-        <a href="#3">Третий</a>
-        <div class="my-box3"></div>
-        <div class="my-box3"></div>
-        <div class="my-box3">
-            <div id="3" class="hr"></div>
-            <h2>Привет, Мир!</h2>
+        <nav>
+            <div id="menu" class="main-menu-up">
+                <ol class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__href" href="./index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__href" href="#vidu_rabot">Виды работ</a>
+                    </li>
+                    <li class="main-menu__item">
+                            <a class="main-menu__href" href="#obslujivaem_obiektu">Обслуживаем объекты</a>
+                        </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__href" href="#o_kompanii">О компании</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__href" href="#tehnologii_rabot">Технологии работы</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__href" href="#klienti">Клиенты</a>
+                    </li>
+                    <li class="main-menu__item">
+                            <a class="main-menu__href" href="#oborudovanie">Оборудование</a>
+                    </li>
+                    <li class="main-menu__item">
+                            <a class="main-menu__href" href="#kontakti">Контакты</a>
+                    </li>
+                </ol>
+                <div id="btn" class="menu-open">МЕНЮ</div>
+            </div>
+
+            <script>
+                btn.addEventListener('click', function() {
+            menu.classList.toggle('main-menu_open')
+            })
+                </script>
+
+        </nav>
+        <h1>Аварийное устранение засоров канализации любой сложности<br> <span style="color:red;">в Москве и Московской области</span></h1>
+        <div class="big-picture">
+            <div class="box">
+            </div>
         </div>
-        <div class="my-box3"></div>
-        <div class="my-box3"></div>
-        <div class="my-box3"></div>
-        <div class="my-box3"></div>
+    </header>
+    <main>
+        <section id="vidu_rabot">
+            <header>
+                <h2>Виды работ, цены и гарантии</h2>
+            </header>
+
+            <div class="card__container">
+                <div class="card">
+                    <a href="./img/elimination-of-sewer-blockages.jpg">
+                        <div style="background-image: url('./img/elimination-of-sewer-blockages.jpg');" class="card__img"></div>
+                    </a>
+                    <h3 class="card__title">Аварийоное устранение засоров в канализации</h3>
+                    <p class="card__text">
+                        Мы предлагаем услуги по аварийоному устранению засоров любой сложности во внутренней и наружной канализационной системе
+                    </p>
+                    <p class="card__text" style="font-size: 1rem;">
+                        <b><span style="color:red;">Цена:</span> от 5000 руб</b>
+                    </p>
+                   
+                </div>
+                <div class="card">
+                  <a href="./img/planovoe-provedenie-rabot.jpg">
+                    <div style="background-image: url('./img/planovoe-provedenie-rabot.jpg');" class="card__img"></div>
+                    </a>
+                    
+                    <h3 class="card__title">Плановое проведение работ</h3>
+                    <p class="card__text">
+                        Плановое проведение работ по промывке внутренней и наружной канализационной системы
+                    </p>
+                    <p class="card__text" style="font-size: 1rem;">
+                        <b><span style="color:red;">Цена:</span> от 8000 руб</b>
+                    </p>
+                    <p class="card__text" style="font-size: 0.9rem;">
+                        <b><span style="color:brown;">Гарантий период:</span> 14 дней</b>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="./img/videoobsledovanie-truboprovoda.png">
+                    <div style="background-image: url('./img/videoobsledovanie-truboprovoda.png');" class="card__img"></div>
+                    </a>
+                    <h3 class="card__title">Видеообследование трубопровода</h3>
+                    <p class="card__text">
+                        Видеообследование трубопровода с предоставлением видеозаписи заказчику
+                    </p>
+                    <p class="card__text" style="font-size: 1rem;">
+                        <b><span style="color:red;">Цена:</span> от 5000 руб</b>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="./img/ochistka-kuhonnyh-zhiroulovitelej.jpg">
+                    <div style="background-image: url('./img/ochistka-kuhonnyh-zhiroulovitelej.jpg');" class="card__img"></div>
+                    </a>
+                    
+                    <h3 class="card__title">Очистка кухонных жироуловителей</h3>
+                    <p class="card__text">
+                        Очистка кухонных жироуловителей с утилизацией жира
+                    </p>
+                    <p class="card__text" style="font-size: 1rem;">
+                        <b><span style="color:red;">Цена:</span> 9000 руб</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="obslujivaem_obiektu">
+                        <header>
+                                <h2>Обслуживаем объекты</h2>
+                        </header>
+                                <div class="container">
+                                <p>
+                                    Мы обслуживаем такие объекты как:
+                                </p>
+                                        <ul>
+                                        <li>Кафе</li>
+                                        <li>Рестораны</li>
+                                        <li>Столовые</li>
+                                        <li>Загородные дома</li>
+                                        <li>Образовательные учреждения</li>
+                                        <li>Торговые предприятия</li>
+                                        <li>Производственные предприятия</li>
+                                        
+                                        </ul>
+                                 </div>
+        </section>
+
+        <section id="o_kompanii">
+                        <header>
+                                <h2>О компании</h2>
+                        </header>
+                                <div class="container">
+                                        <div class="card" style="float: left;">
+                                                <a href="./img/nashe-oborudovanie-3.jpg1">
+                                                    <div style="background-image: url('./img/nashe-oborudovanie-3.jpg1');" class="card__img"></div>
+                                                </a>
+                                            </div>
+                                            <p style="display: inline-block;">
+                                                    Мы работаем в этой сфере с 2010 года.
+                                                </p>
+                                 </div>
+        </section>
+
+                <div style="clear: both;"></div>
+
+        <section id="tehnologii_rabot">
+            <header>
+                <h2>Технологии работы</h2>
+            </header>
+
+            <div class="card__container">
+                <div class="card">
+                    <a href="./img/gidrodinamicheskaya-promyvka.jpg">
+                        <div style="background-image: url('./img/gidrodinamicheskaya-promyvka.jpg');" class="card__img"></div>
+                    </a>
+                    <h3 class="card__title">Гидродинамическая промывка</h3>
+                    <p class="card__text">
+                        Гидродинамическая промывка
+                    </p>
+                </div>
+                <div class="card">
+                  <a href="./img/mekhanicheskaya-prochistka.jpg">
+                    <div style="background-image: url('./img/mekhanicheskaya-prochistka.jpg');"  class="card__img"></div>
+                    </a>
+                    
+                    <h3 class="card__title">Механическая прочистка</h3>
+                    <p class="card__text">
+                        Механическая прочистка
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="./img/himicheskaya-ochistka.jpg">
+                    <div style="background-image: url('./img/himicheskaya-ochistka.jpg');"  class="card__img"></div>
+                    </a>
+                    
+                    <h3 class="card__title">Химическая очистка</h3>
+                    <p class="card__text">
+                        Химическая очистка
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<section id="klienti">
+    <header>
+        <h2>Наши специалисты обслуживали</h2>
+    </header>
+   
+    <div class="card__container">
+        <div class="card">
+            <a href="./img/makdonalds.jpg">
+                <div style="background-image: url('./img/makdonalds.jpg');" class="card__img"></div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./img/mu-mu.jpg">
+                <div style="background-image: url('./img/mu-mu.jpg');" class="card__img"></div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./img/kofe-mania.JPG">
+                <div style="background-image: url('./img/kofe-mania.JPG');" class="card__img"></div>
+            </a>
+        </div>
     </div>
 
-
-    <div val="5" class="my-box2"></div>
-   
-    <div class="my-box2"></div>
-    <div class="my-box2"></div>
-    <div class="my-box2"></div>
-    <div class="my-box2"></div>
-   
-
-
-    <label><input class="hided" type="checkbox"><div class="my-input"></div>Текст</label>
-    <button>Привет!</button>
-
-    <div class="my-box"></div>
-
-    <input class="my-inp" type="text">
-
-    <a href="#p1">Привет</a>
-    <a href="#p2">Мир</a>
-    <a href="#p3">Чудесный</a>
-
-    <h2 id="p1">Привет</h2>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam optio, deleniti minus vero quas delectus reprehenderit voluptas earum quasi, eius error? Illo repellendus neque ut odit recusandae laborum omnis ratione.
-    <h2 id="p2">Мир</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus dolore rerum velit culpa, nisi blanditiis non sint possimus. Vero cum ipsum eaque commodi at iusto dolorem laborum nisi sapiente.
-    <h2 id="p3">Чудесный</h2>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ut doloremque exercitationem laborum eum nostrum neque recusandae deserunt ex! Error aliquid explicabo rem veritatis reprehenderit ea molestiae ut quisquam dolor.
-
-    <!--
-    <div>
-        <a href=""></a>
-        <a href=""></a>
+    <div class="card__container">
+        <div class="card">
+            <a href="./img/dvintsev.jpg">
+                <div style="background-image: url('./img/dvintsev.jpg');" class="card__img"></div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./img/il-patio.jpg">
+                <div style="background-image: url('./img/il-patio.jpg');" class="card__img"></div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./img/hotel-balchug.gif">
+                <div style="background-image: url('./img/hotel-balchug.gif');" class="card__img"></div>
+            </a>
+        </div>
     </div>
+</section>
 
-    <br>
-    <hr>
+<section id="oborudovanie">
+    <header>
+        <h2>Наше оборудование</h2>
+    </header>
 
-   
-    <br>
+    <div class="card__container">
+        <div class="card">
+            <a href="./img/nashe-oborudovanie-1.jpg">
+                <div style="background-image: url('./img/nashe-oborudovanie-1.jpg');" class="card__img"></div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./img/nashe-oborudovanie-2.jpg">
+                <div style="background-image: url('./img/nashe-oborudovanie-2.jpg');" class="card__img"></div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./img/nashe-oborudovanie-3.jpg">
+                <div style="background-image: url('./img/nashe-oborudovanie-3.jpg');" class="card__img"></div>
+            </a>
+        </div>
+    </div>
+</section>
 
-    <input id="ch1" type="checkbox"/>
-    <br><br><br>
-    <label for="ch1">Hello!</label>
+<section id="kontakti">
+    <header>
+            <h2>Контакты</h2>
+    </header>
+            <div class="container">
+                    <p>
+                            <b>График работы:</b> ПН - ВС с 9.00 до 21.00.
+                        </p>
+                        <p>
+                               <span style="color:red;"><b>КОНСУЛЬТАЦИЯ БЕСПЛАТНО!</b></span>
+                        </p>
+            <p>
+                    <b>Для заказа услуги</b> и быстрого ответа звоните нам по телефону <span style="color:red;"><b><a href="tel:+38800039210">495-111-11-11</a></b></span> (в рабочее время)<br><br> или оставляйте заявку на почту <span style="color:blue;"><b>info@sewageservice.ru</b></span> (в нерабочее время) и мы Вам перезвоним.
+            </p>
+             </div>
+</section>
 
-    <br>
-    <hr>
-    -->
+    </main>
+    <footer>
+        <p>2018 @ Все права защищены</p>
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg"  width="100px" height="100px" viewbox="0 0 100 100">
+            <a href="#top"><polyline class="backtotop" points="10,60 90,60 50,30" fill="red" stroke="#000000"></polyline>Наверх</a>
+        </svg>
+    </footer>
 </body>
+
 </html>
