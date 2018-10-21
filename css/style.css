@@ -12,6 +12,18 @@ h1 {
     font-size: 1.3em;
 }
 
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.bottom_text {
+    font-size: 0.9em;
+}
+
 svg.arrow {
     margin-left: 90%;
     display: none;
@@ -101,6 +113,16 @@ svg.velosiped {
     }
     h1 {
         font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    .bottom_text {
+        font-size: 1em;
     }
 }
 
